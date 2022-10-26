@@ -405,9 +405,6 @@ function sendTelemetry(payload) {
 }
 
 async function fetchTest() {
-    // TODO(ekr@rtfm.com): the test page is down
-    return;
-
     let responseText;
     try {
         response = await fetch("https://dnssec-experiment-moz.net/", {cache: "no-store"});
